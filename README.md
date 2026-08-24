@@ -1,20 +1,44 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Glia — sitio institucional de demostración
 
-# Run and deploy your AI Studio app
+Frontend responsive para una consultora ficticia de higiene y seguridad laboral. Modela navegación institucional, servicios, casos, novedades y un formulario con validación local.
 
-This contains everything you need to run your app locally.
+> Todo el contenido comercial, las métricas, los casos y los datos de contacto son ilustrativos. No hay backend y el formulario no envía ni almacena información.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1QUHkifXJL0U61iqGJOMgDY70bq6ekebD
+## Stack
 
-## Run Locally
+React 19, TypeScript, React Router 7, Vite 8, Tailwind CSS 4 y Lucide React.
 
-**Prerequisites:**  Node.js
+## Ejecutar
 
+Requiere Node.js `^20.19` o `^22.12`.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+npm ci
+npm run dev
+npm run typecheck
+npm run build
+npm audit
+```
+
+No usa variables de entorno.
+
+## Decisiones relevantes
+
+- aviso visible del alcance de demo;
+- lazy loading por ruta;
+- validación de formulario sin prometer contacto real;
+- datos ficticios sin enlaces sociales o legales vacíos;
+- configuración Vite mínima y sin inyección de credenciales;
+- dependencias actualizadas y auditadas.
+
+## Limitaciones
+
+No ofrece autenticación, persistencia, CMS, analytics, contacto real ni asesoramiento profesional. Las imágenes remotas requieren conexión y no hay tests automatizados.
+
+## Estado
+
+El deployment configurado anteriormente devuelve 404; la evaluación reproducible es local.
+
+## Autor
+
+Desarrollado por [Nicolás De Felippe](https://github.com/nicodf91) como proyecto de portfolio.
