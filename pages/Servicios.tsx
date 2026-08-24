@@ -8,9 +8,9 @@ const Servicios: React.FC = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    document.title = 'Servicios | Glia Consultora';
+    document.title = 'Servicios de muestra | Glia demo';
     const description =
-      'Servicios profesionales en higiene y seguridad laboral para PyMEs e industrias.';
+      'Demo frontend con tarjetas ficticias de servicios y formulario local sin envío.';
     let meta = document.querySelector('meta[name="description"]') as HTMLMetaElement | null;
     if (!meta) {
       meta = document.createElement('meta');
@@ -35,7 +35,7 @@ const Servicios: React.FC = () => {
                 Servicios
               </p>
               <p className="text-sm text-slate-600">
-                Soluciones profesionales para asegurar cumplimiento y continuidad operativa.
+                Contenido ficticio para evaluar navegación, tarjetas y selección de servicios.
               </p>
             </div>
             <Link

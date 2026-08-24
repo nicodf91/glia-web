@@ -16,7 +16,7 @@ const ALL_POSTS: NewsPost[] = [
   {
     id: '2',
     title: 'Diseño de Rociadores Automáticos',
-    excerpt: 'Inscribite ahora y sé parte de esta experiencia transformadora sobre sistemas de extinción a base de agua.',
+    excerpt: 'Texto ilustrativo para evaluar una tarjeta editorial; no existe inscripción, curso ni evento asociado.',
     category: 'Sistemas',
     imageUrl: 'https://bomfireparts.com/wp-content/uploads/2025/06/Rociadores-contra-incendio-para-oficinas-proteccion-integral-en-un-solo-lugar-980x551.jpg',
     date: '05 Sep, 2024',

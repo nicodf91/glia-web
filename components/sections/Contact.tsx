@@ -117,7 +117,7 @@ const Contact: React.FC<ContactProps> = ({ initialService }) => {
           {/* Contact Info */}
           <div>
             <h2 className="text-3xl font-extrabold text-slate-900 mb-6">
-              Contanos sobre tu empresa y te contactamos
+              Probá la validación con datos ficticios
             </h2>
             <p className="text-lg text-slate-500 mb-10">
               Formulario demostrativo con validación local. No está conectado a un servicio de contacto.
