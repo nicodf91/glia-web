@@ -10,9 +10,9 @@ const Home: React.FC = () => {
   const [preselectedService, setPreselectedService] = useState<string>('');
 
   useEffect(() => {
-    document.title = 'Glia | Higiene y Seguridad Laboral';
+    document.title = 'Glia | Demo de higiene y seguridad laboral';
     const description =
-      'ConsultorÃ­a integral en higiene y seguridad laboral para PyMEs e industrias.';
+      'Demo frontend ficticia de higiene y seguridad laboral para portfolio.';
     let meta = document.querySelector('meta[name="description"]') as HTMLMetaElement | null;
     if (!meta) {
       meta = document.createElement('meta');
