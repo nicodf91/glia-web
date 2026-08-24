@@ -40,9 +40,9 @@ const servicesData: ServiceItem[] = [
   {
     id: 'auditorias',
     title: 'Auditorías y Cumplimiento',
-    description: 'Verificación de estándares para presentar ante ART, ministerios y certificaciones.',
+    description: 'Ejemplo de cómo presentar un servicio regulado; no acredita representación ni certificaciones.',
     icon: Shield,
-    features: ['Auditorías internas', 'Representación ante organismos', 'Gestión de multas']
+    features: ['Tarjetas informativas', 'Jerarquía de contenidos', 'Navegación por secciones']
   },
   {
     id: 'emergencias',
@@ -76,7 +76,7 @@ const Services: React.FC<ServicesProps> = ({ onSelectService }) => {
             Nuestras Soluciones
           </span>
           <h2 className="text-4xl font-extrabold text-slate-900 sm:text-5xl tracking-tight mb-6">
-            Servicios diseñados para tu <span className="relative whitespace-nowrap text-primary-700">tranquilidad</span>
+            Servicios de muestra para evaluar la <span className="relative whitespace-nowrap text-primary-700">interfaz</span>
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-xl text-slate-500 leading-relaxed">
             Desde el diagnóstico inicial hasta la gestión diaria. Cubrimos todas las necesidades normativas para que te enfoques en producir.

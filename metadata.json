@@ -1,5 +1,5 @@
 {
   "name": "Glia - Consultora de Higiene y Seguridad",
-  "description": "Sitio web corporativo para Glia, consultora liderada por Marcelo, especializada en higiene y seguridad laboral para PyMEs e industrias.",
+  "description": "Demo frontend institucional con rutas, componentes de servicios, casos ficticios y un formulario local sin envío.",
   "requestFramePermissions": []
 }

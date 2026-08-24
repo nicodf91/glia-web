@@ -1,5 +1,5 @@
 import React from 'react';
-import { UserCheck, Users, Briefcase, Award, CheckCircle2 } from 'lucide-react';
+import { UserCheck, Briefcase, Award, CheckCircle2 } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
@@ -12,13 +12,13 @@ const About: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-20">
           <span className="text-primary-600 font-bold tracking-wider uppercase text-xs mb-3 block">
-            Nuestra Esencia
+            Alcance de la demo
           </span>
           <h2 className="text-4xl font-extrabold text-slate-900 sm:text-5xl tracking-tight">
-            Sobre Glia
+            Perfil institucional ilustrativo
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-xl text-slate-500">
-            Expertos comprometidos con la seguridad laboral y la excelencia técnica.
+            Una composición de portfolio, no la ficha de una persona o consultora habilitada.
           </p>
         </div>
 
@@ -46,12 +46,12 @@ const About: React.FC = () => {
                     <div className="w-32 h-32 rounded-full p-1 bg-white shadow-xl">
                       <img 
                         src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400" 
-                        alt="Lic. Marcelo Cabali" 
+                        alt="Fotografía ilustrativa de un perfil profesional"
                         className="w-full h-full rounded-full object-cover object-[50%_20%]"
                       />
                     </div>
                     {/* Verification Badge */}
-                    <div className="absolute bottom-2 right-2 bg-white rounded-full p-1 shadow-sm" title="Verificado">
+                    <div className="absolute bottom-2 right-2 bg-white rounded-full p-1 shadow-sm" title="Perfil de demostración">
                       <CheckCircle2 className="w-6 h-6 text-primary-600 fill-primary-50" />
                     </div>
                   </div>
@@ -59,34 +59,34 @@ const About: React.FC = () => {
 
                 {/* Name & Title */}
                 <div className="text-center mb-8">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-1">Lic. Marcelo Cabali</h3>
-                  <p className="text-primary-700 font-semibold text-sm uppercase tracking-wide mb-2">Especialista en Higiene y Seguridad</p>
-                  <p className="text-slate-400 text-xs font-mono bg-slate-50 inline-block px-3 py-1 rounded border border-slate-100">Matrícula Prof. Nº 1234</p>
+                  <h3 className="text-2xl font-bold text-slate-900 mb-1">Perfil profesional de muestra</h3>
+                  <p className="text-primary-700 font-semibold text-sm uppercase tracking-wide mb-2">Componente de presentación</p>
+                  <p className="text-slate-400 text-xs font-mono bg-slate-50 inline-block px-3 py-1 rounded border border-slate-100">Sin identidad ni matrícula reales</p>
                 </div>
 
                 {/* Bio text */}
                 <div className="space-y-4 mb-8 text-center sm:text-left">
                   <p className="text-slate-600 leading-relaxed text-[15px]">
-                    Con más de <span className="font-semibold text-slate-900">15 años de trayectoria</span>, he liderado la implementación de normas ISO y planes de prevención en industrias metalúrgicas, logísticas y de servicios de alta complejidad.
+                    Esta tarjeta demuestra jerarquía visual, fotografía, biografía y datos resumidos sin atribuir una trayectoria real.
                   </p>
                   <p className="text-slate-600 leading-relaxed text-[15px]">
-                    Mi enfoque combina el <span className="text-primary-700 font-medium">rigor técnico</span> necesario para el cumplimiento legal con un trato humano cercano que facilita la adopción de nuevas culturas de seguridad en las organizaciones.
+                    Antes de utilizar una versión comercial deberían validarse identidad, habilitaciones, alcance legal y evidencia de los servicios publicados.
                   </p>
                 </div>
 
                 {/* Stats Grid */}
                 <div className="grid grid-cols-3 gap-2 border-t border-slate-100 pt-6">
                   <div className="text-center p-2 rounded-lg hover:bg-slate-50 transition-colors">
-                    <span className="block text-2xl font-bold text-slate-900">15+</span>
-                    <span className="text-[10px] uppercase tracking-wider text-slate-500 font-semibold">Años Exp.</span>
+                    <span className="block text-2xl font-bold text-slate-900">UI</span>
+                    <span className="text-[10px] uppercase tracking-wider text-slate-500 font-semibold">Responsive</span>
                   </div>
                   <div className="text-center p-2 rounded-lg hover:bg-slate-50 transition-colors border-l border-slate-100 border-r">
-                    <span className="block text-2xl font-bold text-slate-900">200+</span>
-                    <span className="text-[10px] uppercase tracking-wider text-slate-500 font-semibold">Proyectos</span>
+                    <span className="block text-2xl font-bold text-slate-900">SPA</span>
+                    <span className="text-[10px] uppercase tracking-wider text-slate-500 font-semibold">Por rutas</span>
                   </div>
                   <div className="text-center p-2 rounded-lg hover:bg-slate-50 transition-colors">
-                    <span className="block text-2xl font-bold text-slate-900">100%</span>
-                    <span className="text-[10px] uppercase tracking-wider text-slate-500 font-semibold">Garantía</span>
+                    <span className="block text-2xl font-bold text-slate-900">Demo</span>
+                    <span className="text-[10px] uppercase tracking-wider text-slate-500 font-semibold">Sin backend</span>
                   </div>
                 </div>
 
@@ -99,11 +99,11 @@ const About: React.FC = () => {
              {/* Introduction */}
              <div>
                <h3 className="text-3xl font-bold text-slate-900 mb-6 leading-snug">
-                 No ofrecemos soluciones enlatadas. <br/>
-                 <span className="text-primary-700">Diseñamos seguridad a medida.</span>
+                 El contenido modela una consultora. <br/>
+                 <span className="text-primary-700">La implementación demuestra frontend.</span>
                </h3>
                <p className="text-lg text-slate-600 leading-relaxed">
-                 En Glia entendemos que cada empresa es un ecosistema único. Nuestro equipo multidisciplinario analiza cada variable para ofrecer respuestas que no solo cumplen la norma, sino que optimizan costos operativos y protegen lo más valioso: su gente.
+                 Las secciones siguientes son ejemplos de estructura editorial. No constituyen una oferta, diagnóstico ni promesa de cumplimiento normativo.
                </p>
              </div>
 
@@ -120,7 +120,7 @@ const About: React.FC = () => {
                  <div>
                    <h4 className="font-bold text-slate-900 text-xl mb-2 group-hover:text-primary-700 transition-colors">Trato Personalizado y Directo</h4>
                    <p className="text-slate-500 leading-relaxed">
-                     Sin intermediarios burocráticos. Tenés un referente asignado a tu cuenta (muchas veces el propio Marcelo) disponible para resolver dudas operativas y urgencias reales.
+                     La composición muestra cómo destacar un punto de contacto, sin afirmar que exista atención operativa en esta demo.
                    </p>
                  </div>
                </div>
@@ -135,7 +135,7 @@ const About: React.FC = () => {
                  <div>
                    <h4 className="font-bold text-slate-900 text-xl mb-2 group-hover:text-primary-700 transition-colors">Experiencia Multirubro</h4>
                    <p className="text-slate-500 leading-relaxed">
-                     Hemos adaptado protocolos para metalúrgicas pesadas, laboratorios estériles, oficinas corporativas y centros logísticos. Conocemos los dolores de cada sector.
+                     El dataset recorre rubros distintos para probar tarjetas, filtros y densidades de contenido.
                    </p>
                  </div>
                </div>
@@ -150,7 +150,7 @@ const About: React.FC = () => {
                  <div>
                    <h4 className="font-bold text-slate-900 text-xl mb-2 group-hover:text-primary-700 transition-colors">Rigor Técnico y Legal</h4>
                    <p className="text-slate-500 leading-relaxed">
-                     Nuestros informes no son plantillas. Están diseñados para resistir auditorías exigentes, inspecciones ministeriales y certificaciones de calidad.
+                     Cualquier servicio regulado requeriría profesionales habilitados, evidencia y documentación fuera del alcance de este repositorio.
                    </p>
                  </div>
                </div>
