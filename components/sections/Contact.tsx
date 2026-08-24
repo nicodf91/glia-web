@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Mail, MapPin, Phone, Clock, CheckCircle, AlertCircle } from 'lucide-react';
+import { Mail, MapPin, Phone, CheckCircle } from 'lucide-react';
 import Button from '../ui/Button';
 import { ContactFormData, FormStatus } from '../../types';
 
@@ -75,21 +75,13 @@ const Contact: React.FC<ContactProps> = ({ initialService }) => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
     if (!validate()) return;
 
-    setStatus('loading');
-
-    // Simulate API Call
-    try {
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      setStatus('success');
-      setFormData(initialFormState);
-    } catch (error) {
-      setStatus('error');
-    }
+    setStatus('success');
+    setFormData(initialFormState);
   };
 
   if (status === 'success') {
@@ -99,12 +91,12 @@ const Contact: React.FC<ContactProps> = ({ initialService }) => {
           <div className="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
             <CheckCircle className="h-10 w-10 text-primary-600" />
           </div>
-          <h2 className="text-3xl font-bold text-slate-900 mb-4">¡Consulta Enviada!</h2>
+          <h2 className="text-3xl font-bold text-slate-900 mb-4">Validación completada</h2>
           <p className="text-slate-600 mb-8">
-            Gracias por contactarte con Glia. Marcelo o un miembro del equipo te responderá a la brevedad al email proporcionado.
+            La demo no envió ni conservó la información. Este estado solo representa el comportamiento de la interfaz.
           </p>
           <Button onClick={() => setStatus('idle')} variant="outline">
-            Enviar otra consulta
+            Probar nuevamente
           </Button>
         </div>
       </section>
@@ -128,15 +120,15 @@ const Contact: React.FC<ContactProps> = ({ initialService }) => {
               Contanos sobre tu empresa y te contactamos
             </h2>
             <p className="text-lg text-slate-500 mb-10">
-              Estamos listos para ayudarte a mejorar la seguridad de tu entorno laboral. Completá el formulario y recibí un asesoramiento preliminar sin cargo.
+              Formulario demostrativo con validación local. No está conectado a un servicio de contacto.
             </p>
 
             <div className="space-y-8">
               <div className="flex items-start">
                 <Mail className="h-6 w-6 text-primary-600 mt-1 mr-4" />
                 <div>
-                  <h4 className="text-lg font-medium text-slate-900">Email</h4>
-                  <a href="mailto:contacto@gliaconsultora.com" className="text-slate-600 hover:text-primary-700">contacto@gliaconsultora.com</a>
+                  <h4 className="text-lg font-medium text-slate-900">Email ilustrativo</h4>
+                  <p className="text-slate-600">No disponible en esta demo</p>
                 </div>
               </div>
 
@@ -144,17 +136,15 @@ const Contact: React.FC<ContactProps> = ({ initialService }) => {
                 <Phone className="h-6 w-6 text-primary-600 mt-1 mr-4" />
                 <div>
                   <h4 className="text-lg font-medium text-slate-900">Teléfono / WhatsApp</h4>
-                  <p className="text-slate-600">+54 11 1234-5678</p>
-                  <p className="text-sm text-slate-400 mt-1">Lunes a Viernes de 9 a 18hs</p>
+                  <p className="text-slate-600">No disponible en esta demo</p>
                 </div>
               </div>
 
               <div className="flex items-start">
                 <MapPin className="h-6 w-6 text-primary-600 mt-1 mr-4" />
                 <div>
-                  <h4 className="text-lg font-medium text-slate-900">Zona de Operación</h4>
-                  <p className="text-slate-600">Oficinas en CABA.</p>
-                  <p className="text-slate-600">Atención presencial en AMBA y consultoría remota a todo el país.</p>
+                  <h4 className="text-lg font-medium text-slate-900">Zona de operación</h4>
+                  <p className="text-slate-600">Contenido demostrativo sin cobertura comercial real.</p>
                 </div>
               </div>
             </div>
@@ -306,39 +296,18 @@ const Contact: React.FC<ContactProps> = ({ initialService }) => {
                     className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-slate-300 rounded mt-1 bg-white"
                    />
                    <label htmlFor="consent" className="ml-2 text-sm text-slate-600">
-                     Autorizo a Glia a contactarme por este medio para responder mi consulta. *
+                     Comprendo que esta demo no envía ni guarda los datos ingresados. *
                    </label>
                  </div>
                  {errors.consent && <p className="ml-6 text-sm text-red-600">{errors.consent}</p>}
 
-                 <div className="flex items-start">
-                   <input
-                    id="newsletter"
-                    name="newsletter"
-                    type="checkbox"
-                    checked={formData.newsletter}
-                    onChange={(e) => handleChange(e as any)}
-                    className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-slate-300 rounded mt-1 bg-white"
-                   />
-                   <label htmlFor="newsletter" className="ml-2 text-sm text-slate-600">
-                     Quiero recibir novedades útiles sobre higiene y seguridad.
-                   </label>
-                 </div>
               </div>
-
-              {status === 'error' && (
-                <div className="mb-6 p-4 bg-red-50 rounded-md flex items-center text-red-700">
-                   <AlertCircle className="h-5 w-5 mr-2" />
-                   <span>Hubo un error al enviar. Por favor intentalo nuevamente.</span>
-                </div>
-              )}
 
               <Button 
                 type="submit" 
                 fullWidth 
-                disabled={status === 'loading'}
               >
-                {status === 'loading' ? 'Enviando...' : 'Enviar Consulta'}
+                Validar formulario de demo
               </Button>
 
             </form>

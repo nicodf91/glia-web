@@ -7,7 +7,7 @@ const cases: CaseStudy[] = [
     clientType: 'Industria Metalúrgica',
     problem: 'Alto índice de accidentabilidad y multas recurrentes de la ART.',
     solution: 'Implementación de Programa de Seguridad específico, capacitación intensiva en uso de máquinas y rediseño de puestos críticos.',
-    result: 'Reducción del 70% en accidentes leves en el primer año y 0 accidentes graves.',
+    result: 'Escenario ilustrativo para mostrar una tarjeta con problema, intervención y resultado esperado.',
     tags: ['Industria', 'Seguridad Máquinas']
   },
   {
@@ -15,7 +15,7 @@ const cases: CaseStudy[] = [
     clientType: 'Empresa de Logística y Distribución',
     problem: 'Falta de estudios ergonómicos y protocolos de incendio en depósito de 5000m².',
     solution: 'Relevamiento ergonómico integral (Res. 886/15) y desarrollo completo del plan de evacuación con simulacro.',
-    result: 'Aprobación inmediata en auditoría municipal y mejora en clima laboral.',
+    result: 'Escenario ilustrativo; no representa una auditoría, aprobación ni cliente real.',
     tags: ['Logística', 'Ergonomía', 'Incendio']
   },
   {
@@ -23,7 +23,7 @@ const cases: CaseStudy[] = [
     clientType: 'Cadena de Oficinas Administrativas',
     problem: 'Necesidad de estandarizar procesos de seguridad en 5 sucursales distintas.',
     solution: 'Manual de procedimientos único y gestión centralizada de legajos técnicos.',
-    result: 'Cumplimiento normativo total y reducción de costos administrativos en un 30%.',
+    result: 'Escenario ilustrativo para evaluar la presentación de un caso multisucursal.',
     tags: ['Servicios', 'Gestión']
   }
 ];
@@ -34,10 +34,10 @@ const Work: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
           <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
-            Trabajos Realizados
+            Casos de interfaz
           </h2>
           <p className="mt-4 text-xl text-slate-500 max-w-3xl">
-            Resultados reales en clientes reales. Así ayudamos a transformar la cultura de seguridad.
+            Situaciones y resultados ficticios usados únicamente para demostrar el layout de casos de estudio.
           </p>
         </div>
 

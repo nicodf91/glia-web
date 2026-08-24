@@ -6,8 +6,8 @@ import { NewsPost } from '../../types';
 const ALL_POSTS: NewsPost[] = [
   {
     id: '1',
-    title: 'Participamos de la Feria Intersec',
-    excerpt: 'El pasado agosto participamos en la sexta edición de INTERSEC Buenos Aires, la exposición líder en seguridad integral.',
+    title: 'Ejemplo de cobertura de una feria',
+    excerpt: 'Contenido ficticio usado para mostrar una tarjeta editorial con imagen, fecha, categoría y resumen.',
     category: 'Feria Intersec',
     imageUrl: 'https://ellecktra.com/casos/stands-funcional-voran/img/funcional-voran-stand-intersec-01.jpg',
     date: '10 Ago, 2024',
@@ -95,13 +95,13 @@ const News: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-20">
           <span className="text-primary-600 font-bold tracking-wider uppercase text-xs mb-3 block">
-            Actualidad y Recursos
+            Contenido editorial de muestra
           </span>
           <h2 className="text-4xl font-extrabold text-slate-900 sm:text-5xl tracking-tight">
-            Lo último en <span className="text-primary-700">Higiene y Seguridad</span>
+            Tarjetas de <span className="text-primary-700">recursos ficticios</span>
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-xl text-slate-500">
-            Conocé las novedades normativas, eventos y artículos técnicos para asegurar tu empresa.
+            Estos títulos y fechas prueban el layout; no son publicaciones, asesoramiento ni participación en eventos reales.
           </p>
         </div>
 
@@ -161,7 +161,7 @@ const News: React.FC = () => {
                     
                     <div className="mt-auto pt-6 w-full border-t border-slate-50">
                       <button className="text-sm font-bold text-primary-600 hover:text-primary-800 inline-flex items-center transition-colors group/btn">
-                        Leer artículo completo
+                        Vista de demostración
                         <ArrowRight className="w-4 h-4 ml-1 transform group-hover/btn:translate-x-1 transition-transform" />
                       </button>
                     </div>

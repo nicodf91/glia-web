@@ -4,24 +4,24 @@ import { FAQItem } from '../../types';
 
 const faqs: FAQItem[] = [
   {
-    question: '¿Trabajan en todo el país?',
-    answer: 'Nuestra base operativa está en Buenos Aires, pero realizamos consultoría y auditorías en todo el país. Para servicios recurrentes presenciales, nos concentramos en CABA y GBA, coordinando viáticos para el interior.'
+    question: '¿Este sitio representa una consultora operativa?',
+    answer: 'No. Es una demo de portfolio con contenido ilustrativo y sin servicios, clientes ni cobertura geográfica verificados.'
   },
   {
-    question: '¿Qué documentación entregan al finalizar?',
-    answer: 'Dependiendo del servicio, entregamos informes técnicos firmados, constancias de capacitación, legajos técnicos, mediciones certificadas y cualquier documentación exigida por la SRT o ART.'
+    question: '¿El formulario envía información?',
+    answer: 'No. Valida campos en el navegador, no tiene transporte ni almacenamiento y confirma explícitamente que no hubo envío.'
   },
   {
-    question: '¿Atienden PyMEs pequeñas?',
-    answer: '¡Sí! Nos especializamos en PyMEs. Adaptamos nuestros honorarios y alcance a la estructura de tu empresa, asegurando que cumplas la ley sin costos innecesarios.'
+    question: '¿Los casos y métricas son reales?',
+    answer: 'No. Son datos ficticios para demostrar componentes, jerarquía de contenido y comportamiento responsive.'
   },
   {
-    question: '¿Cómo es el proceso de inicio?',
-    answer: 'Comienza con una visita de diagnóstico o una videollamada para entender tu necesidad. Luego presentamos una propuesta formal y, una vez aprobada, asignamos un profesional y comenzamos el relevamiento.'
+    question: '¿Qué demuestra técnicamente?',
+    answer: 'Rutas lazy-loaded, secciones reutilizables, estados de formulario, responsive design y una configuración Vite sin credenciales.'
   },
   {
-    question: '¿Realizan mediciones de puesta a tierra?',
-    answer: 'Sí, realizamos la medición de puesta a tierra y continuidad de las masas según la Resolución 900/15 de la SRT, con instrumental calibrado y certificado.'
+    question: '¿Puede usarse como asesoramiento profesional?',
+    answer: 'No. El contenido no reemplaza a un profesional habilitado ni acredita mediciones, auditorías o certificaciones.'
   }
 ];
 
@@ -53,12 +53,12 @@ const FAQ: React.FC = () => {
             </div>
             
             <h2 className="text-4xl font-extrabold text-slate-900 tracking-tight mb-6">
-              Resolvemos tus dudas <br/>
-              <span className="text-primary-600">principales</span>
+              Alcance de la <br/>
+              <span className="text-primary-600">demostración</span>
             </h2>
             
             <p className="text-lg text-slate-500 mb-10 leading-relaxed">
-              Entendemos que la normativa puede ser confusa. Aquí simplificamos las respuestas a las consultas más habituales de nuestros clientes.
+              Estas respuestas explican qué hace realmente el prototipo y qué capacidades no están implementadas.
             </p>
 
             {/* Support Card */}
@@ -67,7 +67,7 @@ const FAQ: React.FC = () => {
               
               <h4 className="text-lg font-bold text-slate-900 mb-2 relative z-10">¿No encontrás lo que buscás?</h4>
               <p className="text-slate-500 text-sm mb-6 relative z-10">
-                Hablá directamente con nuestro equipo técnico. Te respondemos en menos de 24hs.
+                Probá el formulario local sin usar datos reales. La demo no envía la consulta ni promete una respuesta.
               </p>
               
               <button 
@@ -75,7 +75,7 @@ const FAQ: React.FC = () => {
                 className="w-full py-3 px-4 bg-slate-900 text-white font-medium rounded-xl hover:bg-slate-800 transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2 group/btn relative z-10"
               >
                 <MessageCircle className="w-4 h-4" />
-                <span>Contactar a Soporte</span>
+                <span>Probar formulario demo</span>
               </button>
             </div>
           </div>

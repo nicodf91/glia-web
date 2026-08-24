@@ -74,7 +74,7 @@ const TrustedBy: React.FC = () => {
       <section className="bg-white py-16 lg:py-20 border-b border-slate-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
           <p className="text-center text-sm font-semibold uppercase tracking-wider text-slate-400">
-            Confían en nuestra experiencia
+            Marcas ficticias usadas para demostrar el carrusel
           </p>
         </div>
 

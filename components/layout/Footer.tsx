@@ -1,14 +1,6 @@
 ﻿import React from 'react';
-import { FaInstagram, FaLinkedinIn, FaYoutube, FaWhatsapp } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
-  const socialLinks = [
-    { label: 'Instagram', href: '#', icon: FaInstagram },
-    { label: 'LinkedIn', href: '#', icon: FaLinkedinIn },
-    { label: 'YouTube', href: '#', icon: FaYoutube },
-    { label: 'WhatsApp', href: '#', icon: FaWhatsapp },
-  ];
-
   return (
     <footer className="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,24 +19,6 @@ const Footer: React.FC = () => {
              <p className="text-sm text-slate-400">
                Consultoría integral en higiene y seguridad laboral. Protegiendo personas, asegurando negocios.
              </p>
-             <div className="mt-6">
-               <p className="text-xs uppercase tracking-[0.2em] text-slate-500 mb-3">
-                 Seguinos
-               </p>
-               <div className="flex items-center gap-3">
-                 {socialLinks.map(({ label, href, icon: Icon }) => (
-                   <a
-                     key={label}
-                     href={href}
-                     aria-label={label}
-                     title={label}
-                     className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-800/70 bg-slate-900/60 text-slate-400 transition-colors hover:border-slate-700 hover:bg-slate-800/70 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
-                   >
-                     <Icon className="h-4 w-4" />
-                   </a>
-                 ))}
-               </div>
-             </div>
           </div>
 
           <div>
@@ -58,20 +32,17 @@ const Footer: React.FC = () => {
           </div>
 
           <div>
-             <h4 className="text-white font-semibold mb-4">Contacto</h4>
+             <h4 className="text-white font-semibold mb-4">Alcance</h4>
              <ul className="space-y-2 text-sm">
-               <li>contacto@gliaconsultora.com</li>
-               <li>+54 11 1234-5678</li>
-               <li>Buenos Aires, Argentina</li>
+               <li>Proyecto demostrativo</li>
+               <li>Sin backend ni canal de contacto</li>
+               <li>Datos y métricas ilustrativos</li>
              </ul>
           </div>
 
           <div>
-             <h4 className="text-white font-semibold mb-4">Legales</h4>
-             <ul className="space-y-2 text-sm">
-               <li><a href="#" className="hover:text-white transition-colors">Política de Privacidad</a></li>
-               <li><a href="#" className="hover:text-white transition-colors">Términos y Condiciones</a></li>
-             </ul>
+             <h4 className="text-white font-semibold mb-4">Portfolio</h4>
+             <p className="text-sm text-slate-400">Implementación frontend para demostrar arquitectura, UI responsive y validación local.</p>
           </div>
         </div>
 

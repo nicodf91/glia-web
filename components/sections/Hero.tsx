@@ -54,20 +54,20 @@ const Hero: React.FC = () => {
           <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-7 lg:text-left">
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary-50 text-primary-700 text-sm font-medium mb-6">
               <span className="flex h-2 w-2 rounded-full bg-primary-500 mr-2"></span>
-              Consultoría Integral para PyMEs e Industrias
+              Demo frontend institucional
             </div>
             
             <h1 className="text-4xl tracking-tight font-extrabold text-slate-900 sm:text-5xl md:text-6xl lg:leading-tight">
-              Higiene y seguridad que <span className="text-primary-700">protege a tu gente</span> y a tu negocio.
+              Una interfaz de servicios que <span className="text-primary-700">explica su alcance</span> con claridad.
             </h1>
             
             <p className="mt-6 text-lg text-slate-600 leading-relaxed">
-              Diagnóstico, plan de acción y acompañamiento continuo. Liderado por <strong>Marcelo</strong>, especialista con más de 15 años de experiencia reduciendo riesgos y asegurando cumplimiento normativo.
+              El contenido ilustra cómo presentar servicios, recursos y casos en un sitio responsive. No representa asesoramiento, credenciales ni experiencia profesional verificadas.
             </p>
             
             <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0 flex flex-col sm:flex-row gap-4">
               <Button onClick={() => scrollTo('contacto')} className="gap-2">
-                Solicitar asesoría <ChevronRight className="h-5 w-5" />
+                Probar formulario demo <ChevronRight className="h-5 w-5" />
               </Button>
               <Button variant="outline" onClick={() => navigate('/servicios')}>
                 Ver servicios
@@ -77,11 +77,11 @@ const Hero: React.FC = () => {
             <div className="mt-8 text-sm text-slate-500 flex items-center justify-center lg:justify-start gap-6">
               <div className="flex items-center gap-1">
                 <ShieldCheck className="h-4 w-4 text-primary-600" />
-                <span>Cumplimiento Normativo</span>
+                <span>Navegación responsive</span>
               </div>
               <div className="flex items-center gap-1">
                 <ShieldCheck className="h-4 w-4 text-primary-600" />
-                <span>Gestión de Riesgos</span>
+                <span>Contenido ilustrativo</span>
               </div>
             </div>
           </div>

@@ -13,6 +13,9 @@ const App: React.FC = () => {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <ScrollToHash />
+      <div className="border-b border-amber-200 bg-amber-50 px-4 py-2 text-center text-xs text-amber-900">
+        Demo de portfolio: contenido y casos ilustrativos; el formulario no envía ni guarda datos.
+      </div>
 
       <Suspense
         fallback={
